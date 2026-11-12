@@ -271,7 +271,9 @@ a{color:#173F55}a:hover{color:#0E2A3A}
 <script>
 (function(){var b=document.getElementById('mv-burger'),n=document.getElementById('mv-mobile-nav');
 function set(o){n.hidden=!o;b.setAttribute('aria-expanded',o?'true':'false');b.setAttribute('aria-label',o?'Zatvori izbornik':'Otvori izbornik');b.style.background=o?'#173F55':'transparent';b.style.color=o?'#FBF9F1':'#173F55';b.querySelector('.ic-open').style.display=o?'none':'';b.querySelector('.ic-close').style.display=o?'':'none';}
-var y=0;b.addEventListener('click',function(){y=window.scrollY;set(n.hidden);});\ndocument.addEventListener('click',function(e){if(n.hidden)return;if(e.target.closest('#mv-burger,#mv-mobile-nav'))return;set(false);});\nwindow.addEventListener('scroll',function(){if(!n.hidden&&Math.abs(window.scrollY-y)>12)set(false);},{passive:true});
+var y=0;b.addEventListener('click',function(){y=window.scrollY;set(n.hidden);});
+document.addEventListener('click',function(e){if(n.hidden)return;if(e.target.closest('#mv-burger,#mv-mobile-nav'))return;set(false);});
+window.addEventListener('scroll',function(){if(!n.hidden&&Math.abs(window.scrollY-y)>12)set(false);},{passive:true});
 n.querySelectorAll('[data-close]').forEach(function(a){a.addEventListener('click',function(){set(false);});});})();
 </script>
 </body>
