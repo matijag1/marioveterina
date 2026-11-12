@@ -36,12 +36,13 @@ a{color:#173F55}a:hover{color:#0E2A3A}
 .mv-hero-call{display:none !important}
 .mv-hero-art img{max-width:240px !important}
 .mv-info-desktop{display:none !important}
+.mv-hours-row{flex-direction:column !important;align-items:flex-start !important}
 .mv-info-mobile{display:block}
 }
 </style>
 </head>
 <body>
-<div style="font-family: 'Nunito Sans', system-ui, sans-serif; color: #2A3A44; background: #FBF9F1; width: 100%; overflow-x: hidden">
+<div style="font-family: 'Nunito Sans', system-ui, sans-serif; color: #2A3A44; background: #FBF9F1; width: 100%; overflow-x: clip">
 
 <!-- NAV -->
 <header class="mv-header" style="background: #C7DC92">
@@ -218,8 +219,8 @@ a{color:#173F55}a:hover{color:#0E2A3A}
 <h3 style="margin: 0 0 20px; font-family: Montserrat, sans-serif; font-weight: 700; font-size: 22px; color: #173F55">Radno vrijeme</h3>
 <div style="padding: 24px 26px; background: #173F55; border-radius: 20px">
 <p style="margin: 0 0 14px; font-family: Montserrat, sans-serif; font-weight: 700; font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; color: #F6A06C">Radno vrijeme s pacijentima</p>
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 4px 16px; padding: 12px 0; border-bottom: 1px solid #2E5770"><span style="font-size: 17px; color: #D9E6EC">Ponedjeljak – Petak</span><strong style="font-family: Montserrat, sans-serif; font-size: 22px; color: #FBF9F1">08–10 i 16–18</strong></div>
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 4px 16px; padding: 12px 0 0"><span style="font-size: 17px; color: #D9E6EC">Subota</span><strong style="font-family: Montserrat, sans-serif; font-size: 22px; color: #FBF9F1">08–11</strong></div>
+<div class="mv-hours-row" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 4px 16px; padding: 12px 0; border-bottom: 1px solid #2E5770"><span style="font-size: 17px; color: #D9E6EC">Ponedjeljak – Petak</span><strong style="font-family: Montserrat, sans-serif; font-size: 22px; color: #FBF9F1">08–10 i 16–18</strong></div>
+<div class="mv-hours-row" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 4px 16px; padding: 12px 0 0"><span style="font-size: 17px; color: #D9E6EC">Subota</span><strong style="font-family: Montserrat, sans-serif; font-size: 22px; color: #FBF9F1">08–11</strong></div>
 </div>
 <p style="margin: 28px 0 6px; font-family: Montserrat, sans-serif; font-weight: 700; font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; color: #52626B">Radno vrijeme ambulante</p>
 <div style="display: flex; flex-direction: column">
@@ -242,10 +243,10 @@ a{color:#173F55}a:hover{color:#0E2A3A}
 </div>
 <div style="display: flex; gap: 14px; align-items: center">
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#173F55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg>
-<a href="mailto:info@example.com" style="font-size: 17px; font-weight: 700">[info@mario-veterina.hr]</a>
+<a href="mailto:mario.vet44@gmail.com" style="font-size: 17px; font-weight: 700">mario.vet44@gmail.com</a>
 </div>
-<div style="flex: 1 1 auto; min-height: 160px; border-radius: 18px; background: #E8F0D2; border: 2px dashed #A9BE78; display: flex; align-items: center; justify-content: center; padding: 16px">
-<p style="margin: 0; font-weight: 700; color: #52626B; text-align: center">[Google karta s lokacijom]</p>
+<div style="flex: 1 1 auto; min-height: 260px; border-radius: 18px; overflow: hidden; background: #E8F0D2; display: flex">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3535.8472892026434!2d16.346537376773494!3d45.497333131226114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4766f35b444fcd39%3A0x5420c906d6fbb49!2sMARIO%20-%20VETERINA%20D.O.O.!5e1!3m2!1shr!2shr!4v1794490042605!5m2!1shr!2shr" title="Lokacija ambulante Mario-Veterina na Google karti" style="border: 0; width: 100%; min-height: 260px; flex: 1 1 auto; display: block" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
 </div>
 </div>
 
